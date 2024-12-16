@@ -1,0 +1,265 @@
+/* Animations */
+@keyframes fade-in-out {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -60%);
+  }
+  10%, 90% {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(-50%, -40%);
+  }
+}
+
+/* Bouton Ajouter au panier */
+.add-to-cart-button {
+  padding: 12px 25px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.add-to-cart-button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 123, 255, 0.4); /* Ajout d'une ombre lors du survol */
+}
+
+/* Boutons - et + */
+.quantity-button {
+  padding: 8px 18px;
+  border: 2px solid #ffffff;
+  background-color: #1500ff;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.quantity-button:hover {
+  background-color: rgb(12, 4, 159);
+  color: #ffffff;
+  transform: scale(1.1); /* Effet de zoom au survol */
+}
+
+/* Affichage de la quantité */
+.quantity-display {
+  padding: 5px 15px;
+  border: 2px solid #007bff;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  background-color: white;
+  color: #007bff;
+  transition: all 0.3s ease;
+}
+
+.quantity-display:hover {
+  border-color: #0056b3;
+}
+
+/* Conteneur du filtre */
+.filter-container {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.filter-button {
+  padding: 12px 25px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 15px;
+}
+
+.filter-button:hover {
+  background-color: white;
+  color: #007bff;
+  border: 2px solid #007bff;
+}
+
+.filter-button .arrow {
+  margin-left: 8px;
+}
+
+.sort-options {
+  position: absolute;
+  top: 50px;
+  right: 0%;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 10px;
+  width: 200px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.sort-button {
+  display: block;
+  width: 100%;
+  padding: 10px 20px;
+  background-color: #ffffff;
+  color: rgb(0, 55, 255);
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.sort-button:hover {
+  background-color: rgb(0, 55, 255);
+  color: #ffffff;
+  border: 2px solid #007bff;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 10px 0;
+  border-bottom: 2px solid #f1f1f1;
+}
+
+/* Menu Burger */
+.burger-menu {
+  position: relative;
+  display: inline-block;
+}
+
+.burger-button {
+  background-color: transparent;
+  border: none;
+  font-size: 40px;
+  cursor: pointer;
+  transition: transform 0.3s ease, color 0.3s ease;
+  margin-top: 20px;
+  
+}
+
+.burger-button:hover {
+  color: #007bff; /* Changer la couleur au survol */
+  transform: rotate(180deg); /* Effet de rotation */
+}
+
+/* Menu des catégories */
+.category-menu {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 10px;
+  width: 250px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.category-item {
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+}
+
+.category-item input {
+  margin-right: 10px;
+}
+
+.category-item label {
+  cursor: pointer;
+  font-size: 16px;
+  transition: color 0.2s ease;
+}
+
+.category-item label:hover {
+  color: #007bff; /* Changer la couleur au survol */
+}
+
+/* Message "Produit non disponible" */
+.no-products-message {
+  color: red;
+  font-size: 18px;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+/* Style des éléments de produit */
+.product-item {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.product-item:hover {
+  transform: scale(1.05); /* Effet de zoom au survol */
+}
+
+.product-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.quantity-control {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.quantity-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 18px;
+}
+
+.quantity-button:hover {
+  background-color: #0056b3;
+}
+
+/* Style du bouton Ajouter au panier */
+.add-to-cart-button {
+  background-color: #0000ff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.add-to-cart-button:hover {
+  background-color: #070186;
+}
+::-webkit-scrollbar{
+  color: #0000ff;
+}

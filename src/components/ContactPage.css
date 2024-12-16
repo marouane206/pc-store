@@ -1,0 +1,103 @@
+/* Style global pour la page de contact */
+.contact-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75vh;
+    background-color: #f8f9fa;
+  }
+  
+  .contact-info-container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 600px;
+    text-align: center;
+  }
+  
+  .contact-info h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .contact-item {
+    margin-bottom: 20px;
+  }
+  
+  .contact-item h3 {
+    font-size: 20px;
+    margin-bottom: 5px;
+  }
+  
+  .contact-item p {
+    font-size: 16px;
+  }
+  
+  /* Style pour les liens d'email et téléphone */
+  .contact-item a {
+    text-decoration: none;
+    color: #007bff;  /* Couleur bleue par défaut */
+    transition: color 0.3s ease, text-decoration 0.3s ease; /* Transition douce pour le hover */
+  }
+  
+  .contact-item a:hover {
+    color: #0056b3; /* Changement de couleur lors du survol */
+    text-decoration: underline; /* Ajouter un soulignement lors du survol */
+  }
+  
+  /* Style pour les liens sociaux */
+  .social-links {
+    margin-top: 20px;
+  }
+  
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .social-icon {
+    font-size: 40px;
+    color: #333;
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+  
+  .instagram-icon {
+    color: #E4405F; /* Instagram red */
+  }
+  
+  .facebook-icon {
+    color: #3b5998; /* Facebook blue */
+  }
+  
+  .whatsapp-icon {
+    color: #25D366; /* WhatsApp green */
+  }
+  
+  /* Hover effets spécifiques */
+  .instagram-icon:hover {
+    transform: scale(1.2);
+    color: #E4405F;
+  }
+  
+  .facebook-icon:hover {
+    transform: scale(1.2);
+    color: #3b5998;
+  }
+  
+  .whatsapp-icon:hover {
+    transform: scale(1.2);
+    color: #25D366;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  a:hover {
+    color: inherit;
+  }
+  
